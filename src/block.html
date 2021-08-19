@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ブロック、インライン、インラインブロック</title>
+
+  <style>
+    .wrapper {
+      width: 80vw;
+      padding: 20px;
+      margin: 0 auto;
+    }
+
+    .wrapper h3 {
+      text-align: center;
+    }
+
+    .block,
+    .inline,
+    .inline__block {
+      padding: 20px 0;
+      margin: 30px 0;
+      background-color: gold;
+      border: 3px solid #666;
+    }
+
+    .inline__block {
+      letter-spacing: -0.5em;
+    }
+
+    #block,
+    .block2 {
+      color: white;
+      background-color: red;
+      border: 1px solid #fdfdfd;
+    }
+
+    #inline,
+    .inline2 {
+      display: inline;
+      color: white;
+      background-color: blue;
+      border: 1px solid #fdfdfd;
+    }
+
+    #inline__block,
+    .inline__block2 {
+      display: inline-block;
+      color: white;
+      letter-spacing: normal;
+      background-color: orange;
+      border: 1px solid #fdfdfd;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h3>黒いボーダーが親要素</h3>
+    <section class="block">
+      <div id="block">
+        これはブロックレベル要素です
+      </div>
+    </section>
+
+    <section class="inline">
+      <div id="inline">
+        これはインライン要素です
+      </div>
+    </section>
+
+    <section class="inline__block">
+      <div id="inline__block">
+        これはインラインブロック要素です
+      </div>
+    </section>
+
+    <h3>他の要素との並び方</h3>
+    <section class="block">
+      <div class="block2">
+        ブロック
+      </div>
+      <div class="block2">
+        ブロック2
+      </div>
+      <div class="block2">
+        ブロック3
+      </div>
+    </section>
+
+    <section class="inline">
+      <div class="inline2">
+        インライン
+      </div>
+      <div class="inline2">
+        インライン2
+      </div>
+      <div class="inline2">
+        インライン3
+      </div>
+    </section>
+
+    <section class="inline__block">
+      <div class="inline__block2">
+        インラインブロック
+      </div>
+      <div class="inline__block2">
+        インラインブロック2
+      </div>
+      <div class="inline__block2">
+        インラインブロック3
+      </div>
+    </section>
+  </div>
+</body>
+</html>

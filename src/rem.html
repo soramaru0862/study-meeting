@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rem,em,%,px</title>
+
+  <style>
+    .wrapper {
+      width: 85vw;
+      margin: 0 auto;
+    }
+
+    img {
+      width: 700px;
+      height: auto;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h2>px</h2>
+    <p>デバイスの1ドットを表す絶対的な値です。ただし、プリンターやスマホなどの高解像度デバイスでは1px内に複数のドットを含む場合があります。</p>
+    <p>現在、ほぼすべてのブラウザで小数点pxを表すことができますが、borderなど一部プロパティでは小数点pxを許容しない仕様もあります。</p>
+
+    <h2>em</h2>
+    <p>その要素自身のfont-size値を基準として相対的な値となります。たとえば、paddingプロパティに指定した場合を考えてみましょう。</p>
+
+    <img src="img/code.png" alt="">
+    <br>
+    <img src="img/code2.png" alt="">
+    <br>
+    <p>.parentと.childのpaddingの値は何pxでしょうか？</p>
+    <br>
+    <p>次にその要素自身にfont-sizeが指定されている場合を考えましょう。</p>
+    <img src="img/code3.png" alt="">
+    <br>
+
+    <h2>rem</h2>
+    <p>ルート要素（通常はHTML要素）のfont-size値を基準として相対的な値となります。</p>
+    <br>
+    <p>それでは先程と同じく考えていきましょう。</p>
+    <img src="img/code4.png" alt="">
+    <br>
+
+    <h2>%</h2>
+    <p>相対的な値となりますが、プロパティによって何が基準になるかが変わってきます。</p>
+    <p>たとえば、widthやmargin、paddingプロパティなら親要素の横幅に対する割合、heightプロパティなら親要素の高さに対する割合、font-sizeプロパティなら親要素の文字サイズに対する割合となります。</p>
+    <p>font-sizeに関してはemと同じです。</p>
+    <br>
+
+    <h2>vw vh</h2>
+    <p>ブラウザの横幅に対する相対的な値となり、1vwはブラウザの横幅の1%、1vhはブラウザの縦幅の1%に相当します。</p>
+    <p>ただ、全体的なレイアウトなどにvw単位を使うと意図しない余白が生まれることがあります。vw単位はスクロールバーの幅を含む仕様のため、width: 100vw;を指定するとスクロールバーの幅分、横スクロールが発生します。</p>
+    <br>
+
+    <h1>単位のまとめ</h1>
+    <p>ぶっちゃけ何を使ってもいい</p>
+    <p>でも…</p>
+  </div>
+
+</body>
+</html>

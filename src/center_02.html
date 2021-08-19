@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中央揃え</title>
+
+  <style>
+    .wrapper {
+      width: 80vw;
+      padding: 30px;
+      margin: 0 auto;
+    }
+
+    h2,
+    h3 {
+      text-align: center;
+    }
+
+    .parent {
+      padding: 50px 0;
+      margin: 25px 0;
+      background-color: lightgray;
+      border: 1px solid black;
+    }
+
+    .block {
+      width: 120px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      border: 5px dashed orange;
+    }
+
+    .inline__block {
+      display: inline-block;
+    }
+
+    .blank {
+      height: 70px;
+    }
+
+    .item {
+      color: white;
+      background-color: violet;
+    }
+
+    .inline__big {
+      font-size: 3rem;
+    }
+
+    /* インライン要素 */
+    .parent1 {}
+
+    .item1 {}
+
+    /* ブロック要素 */
+    .parent2 {}
+
+    .item2 {}
+
+    /* インラインブロック要素 */
+    .parent3 {}
+
+    .item3 {}
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h2>要素の中央揃え</h2>
+
+    <h3>インライン要素の上下中央寄せ</h3>
+    <div class="parent parent1">
+      <span class="inline item item1">インライン要素</span>
+      <span class="inline__big item item1">インライン要素</span>
+      <span class="inline item item1">インライン要素</span>
+    </div>
+
+    <h3>ブロック要素の上下中央寄せ</h3>
+    <div class="parent parent2">
+      <div class="blank"></div>
+      <div class="block item2">
+        ブロック要素
+      </div>
+    </div>
+
+    <h3>インラインブロック要素の上下中央寄せ</h3>
+    <div class="parent parent3">
+      <span class="inline__block item item3">i-block要素</span>
+      <span class="inline__block item item3 inline__big">i-block要素</span>
+      <span class="inline__block item item3">i-block要素</span>
+    </div>
+  </div>
+</body>
+</html>
