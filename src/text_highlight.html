@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>テキストのハイライトカラー</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 20px;
+      background-color: rgb(0, 0, 0);
+    }
+
+    p {
+      font-family: 'Hachi Maru Pop', cursive;
+      font-size: 1.5rem;
+      line-height: 1.8;
+      color: rgb(175, 252, 194);
+    }
+
+    .custom-highlighting::selection {
+      color: rgb(146, 146, 146);
+      background-color: gold;
+    }
+
+    .shinichi::selection {
+      color: aqua;
+      background-color: #fdfdfd;
+    }
+
+    .heiji {
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div>
+      <p class="heiji">
+        わいは、西の高校生探偵服部平次や
+      </p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <p class="custom-highlighting">
+        俺は高校生探偵、工藤新一。<br>幼馴染で同級生の毛利蘭と遊園地へ遊びに行って黒ずくめの男の怪しげな取引現場を目撃した。<br>取引を見るのに夢中になっていた俺は、背後から近づいてくるもう一人の仲間に気づかなかった。<br>俺はその男に毒薬を飲まされ、目が覚めたら・・・体が縮んでしまっていた。
+      </p>
+      <br>
+      <p class="shinichi">
+        工藤新一が生きているとやつらにばれたらまた命を狙われ、周りの人間にも危害が及ぶ。<br>阿笠博士の助言で正体を隠すことにした俺は、蘭に名前を聞かれて、とっさに江戸川コナンと名乗り、やつらの情報をつかむ為に、父親が探偵をやっている蘭の家に転がり込んだ。<br>たった一つの真実見抜く見た目は子供、頭脳は大人、<br>その名は、名探偵コナン。
+      </p>
+    </div>
+  </div>
+</body>
+</html>

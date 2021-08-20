@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSSだけで作るモーダルウィンドウ</title>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: -webkit-linear-gradient(to right, #834d9b, #d04ed6);
+      background: linear-gradient(to right, #834d9b, #d04ed6);
+    }
+
+    .wrapper a {
+      display: inline-block;
+      padding: 15px;
+      font-family: 'Roboto', sans-serif;
+      color: #585858;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-color: #fff;
+      border-radius: 3px;
+    }
+
+    .modal {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+      background: rgba(77, 77, 77, 0.7);
+      opacity: 0;
+      transition: all 0.4s;
+    }
+
+    .modal:target {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .modal__content {
+      position: relative;
+      width: 500px;
+      max-width: 90%;
+      padding: 1em 2em;
+      background: #fff;
+      border-radius: 4px;
+    }
+
+    .modal__footer {
+      text-align: right;
+
+      a {
+        color: #585858;
+      }
+
+      i {
+        color: #d02d2c;
+      }
+    }
+
+    .modal__close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #585858;
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <a href="#demo-modal">Open Demo Modal</a>
+  </div>
+
+  <div id="demo-modal" class="modal">
+    <div class="modal__content">
+      <h1>CSSだけでモーダルやるで</h1>
+
+      <p>
+        モーダルウィンドウはCSSだけで作ることができます！JavaScriptなしでも！
+      </p>
+      <p>中身は画像だろうがリンクだろうがご自由にどうぞ！</p>
+
+      <a href="#" class="modal__close">&times;</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>スティッキーヘッダー</title>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .section {
+      font-size: 1.4em;
+      line-height: 2;
+      letter-spacing: 0.05em;
+    }
+
+    .section h2,
+    h3 {
+      margin: 0;
+      font-weight: normal;
+      text-align: center;
+    }
+
+    .section__header {
+      position: sticky;
+      top: 0;
+      padding: 1em;
+      color: gold;
+      background: #171717;
+    }
+
+    .section__content {
+      display: flex;
+      justify-content: center;
+      padding: 1em;
+    }
+
+    .section__content>div {
+      max-width: 992px;
+    }
+
+  </style>
+</head>
+<body>
+  <section class="section">
+    <div class="section__header">
+      <h2>
+        Section #1 Header
+      </h2>
+    </div>
+
+    <div class="section__content">
+      <div>
+        <h3>
+          Section #1
+        </h3>
+
+        <p>
+          その要素は、ドキュメントの通常の流れに従って配置され、top、right、bottom、leftの値に基づいて、テーブル関連要素を含む、最も近いスクロール先祖および包含ブロック（最も近いブロックレベルの先祖）に対して相対的にオフセットされる。このオフセットは他の要素の位置には影響しない。
+        </p>
+
+        <p>
+          この値は、常に新しいスタッキングコンテキストを作成します。スティッキー要素は、「スクロール機構」（overflow が hidden、scroll、auto、overlayの場合に作成される）を持つ最も近い祖先に「スティッキー」することに注意してください。これにより、「スティッキー」な動作が効果的に抑制されます（W3C CSSWGに関するGithubの課題を参照）。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section__header">
+      <h2>
+        Section #2 Header
+      </h2>
+    </div>
+
+    <div class="section__content">
+      <div>
+        <h3>
+          Section #2
+        </h3>
+
+        <p>
+          その要素は、ドキュメントの通常の流れに従って配置され、top、right、bottom、leftの値に基づいて、テーブル関連要素を含む、最も近いスクロール先祖および包含ブロック（最も近いブロックレベルの先祖）に対して相対的にオフセットされる。このオフセットは他の要素の位置には影響しない。
+        </p>
+
+        <p>
+          この値は、常に新しいスタッキングコンテキストを作成します。スティッキー要素は、「スクロール機構」（overflow が
+          hidden、scroll、auto、overlayの場合に作成される）を持つ最も近い祖先に「スティッキー」することに注意してください。これにより、「スティッキー」な動作が効果的に抑制されます（W3C
+          CSSWGに関するGithubの課題を参照）。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section__header">
+      <h2>
+        Section #3 Header
+      </h2>
+    </div>
+
+    <div class="section__content">
+      <div>
+        <h3>
+          Section #3
+        </h3>
+
+        <p>
+          その要素は、ドキュメントの通常の流れに従って配置され、top、right、bottom、leftの値に基づいて、テーブル関連要素を含む、最も近いスクロール先祖および包含ブロック（最も近いブロックレベルの先祖）に対して相対的にオフセットされる。このオフセットは他の要素の位置には影響しない。
+        </p>
+
+        <p>
+          この値は、常に新しいスタッキングコンテキストを作成します。スティッキー要素は、「スクロール機構」（overflow が
+          hidden、scroll、auto、overlayの場合に作成される）を持つ最も近い祖先に「スティッキー」することに注意してください。これにより、「スティッキー」な動作が効果的に抑制されます（W3C
+          CSSWGに関するGithubの課題を参照）。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section__header">
+      <h2>
+        Section #4 Header
+      </h2>
+    </div>
+
+    <div class="section__content">
+      <div>
+        <h3>
+          Section #4
+        </h3>
+
+        <p>
+          その要素は、ドキュメントの通常の流れに従って配置され、top、right、bottom、leftの値に基づいて、テーブル関連要素を含む、最も近いスクロール先祖および包含ブロック（最も近いブロックレベルの先祖）に対して相対的にオフセットされる。このオフセットは他の要素の位置には影響しない。
+        </p>
+
+        <p>
+          この値は、常に新しいスタッキングコンテキストを作成します。スティッキー要素は、「スクロール機構」（overflow が
+          hidden、scroll、auto、overlayの場合に作成される）を持つ最も近い祖先に「スティッキー」することに注意してください。これにより、「スティッキー」な動作が効果的に抑制されます（W3C
+          CSSWGに関するGithubの課題を参照）。
+        </p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

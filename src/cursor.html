@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>カーソルの変更</title>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 0 10px;
+      background: #4776e6;
+      background: -webkit-linear-gradient(to right, #4776e6, #8e54e9);
+      background: linear-gradient(to right, #4776e6, #8e54e9);
+    }
+
+    .tile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
+      height: 200px;
+      margin-right: 10px;
+      font-size: 1.4em;
+      color: #fff;
+      text-align: center;
+      background-color: #de5448;
+    }
+
+    .tile--image-cursor {
+      cursor: url('./img/anpanman.png') 40 40, auto;
+      background-color: #1da1f2;
+    }
+
+    .tile--emoji-cursor {
+      cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚀</text></svg>"), auto;
+      background-color: #4267b2;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="tile">
+      標準
+    </div>
+
+    <div class="tile tile--image-cursor">
+      画像
+    </div>
+
+    <div class="tile tile--emoji-cursor">
+      絵文字
+    </div>
+  </div>
+</body>
+</html>

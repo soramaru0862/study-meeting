@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSSで関数を使おう</title>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .wrapper {
+      margin: 0 auto;
+    }
+
+    .content__wrapper {
+      width: 80vw;
+      margin: 0 auto;
+    }
+
+    strong {
+      font-size: 1.5rem;
+      color: red;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      height: 500px;
+    }
+
+    .sidebar {
+      width: 200px;
+      background-color: red;
+    }
+
+    .main__content {
+      width: 300px;
+      background-color: blueviolet;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content__wrapper">
+      <h2>CSSのcalc()関数は、プロパティの値を定義する際に計算式にできます</h2>
+      <br>
+      <p>
+        calc()関数とは簡単に説明すると、CSSで数学演算を行うことができます。calc()関数以前のCSSではプロパティの値に正確な値しか指定できませんでしたが、これはレスポンシブ対応では非常に困りました。<br>そこでcalc()関数の出番です。calc()関数を使用すると、ビューポートや親要素に基づいて値を計算できます。<br>加算や減算だけでなく、乗算や除算することもできます。<br>単位を揃える必要はありません。calc()関数の計算式では、相対値の単位(em, %, vw)や絶対値の単位(px)を組み合わせて、計算することができます。
+      </p>
+      <p>しかし、計算をさせているのでパフォーマンスは落ちます</p>
+      <p>注意：<strong>常に演算子をスペースで区切る</strong></p>
+    </div>
+    <br>
+
+    <div class="container">
+      <div class="sidebar"></div>
+      <div class="main__content"></div>
+    </div>
+  </div>
+</body>
+</html>
